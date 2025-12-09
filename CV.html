@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV - Hernandez Valentin Developer</title>
+
+    <style>
+      /* ===== ESTILO GENERAL (PANTALLA) ===== */
+
+      body {
+        background: #f5f5f5;
+        margin: 0;
+        padding: 30px 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Contenedor principal simulando hoja A4 */
+      .page {
+        background: #ffffff;
+        width: 800px;
+        margin: 0 auto;
+        padding: 50px 60px;
+        box-sizing: border-box;
+        color: #111;
+        line-height: 1.5;
+        font-size: 13.5px;
+      }
+
+      /* TITULOS */
+      h1,
+      h2,
+      h3 {
+        font-weight: bold !important;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 26px;
+        margin: 0 0 15px 0;
+      }
+
+      /* HEADER EN DOS COLUMNAS */
+      .header-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 35px;
+        margin-top: 5px;
+        column-gap: 40px;
+      }
+
+      .header-grid p {
+        margin: 3px 0;
+      }
+
+      .header-grid .right {
+        text-align: right;
+      }
+
+      /* LINKS CLICKEABLES */
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Títulos de sección */
+      h2 {
+        font-size: 15px;
+        margin-top: 28px;
+        margin-bottom: 4px;
+      }
+
+      /* Línea azul */
+      .line {
+        border-bottom: 2px solid #2c3f8f;
+        width: 100%;
+        margin-bottom: 12px;
+      }
+
+      p {
+        margin: 3px 0;
+      }
+
+      h3 {
+        font-size: 13.5px;
+        margin-bottom: 1px;
+        margin-top: 12px;
+      }
+
+      /* ===== CONFIGURACIÓN PDF ===== */
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        body {
+          background: #ffffff !important;
+          padding: 0;
+          margin: 0;
+        }
+
+        .page {
+          width: auto;
+          padding: 6mm 12mm;
+          box-shadow: none;
+          font-size: 12px !important;
+        }
+
+        p,
+        li,
+        .header-grid p {
+          font-size: 12px !important;
+        }
+
+        h2 {
+          font-size: 13.5px !important;
+          margin-top: 16px !important;
+          margin-bottom: 3px !important;
+        }
+
+        h3 {
+          font-size: 12.5px !important;
+          margin-top: 7px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <h1>Valentín Mateo Hernández</h1>
+
+      <div class="header-grid">
+        <div class="left">
+          <p><strong>Buenos Aires, Argentina.</strong></p>
+          <p><strong>Mail:</strong> <a href="mailto:valentinhernandezmateo@gmail.com">valentinhernandezmateo@gmail.com</a></p>
+          <p><strong>Teléfono:</strong> <a href="tel:+541140651612">+54 11 4065-1612</a></p>
+        </div>
+
+        <div class="right">
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/valentinh8">linkedin.com/in/valentinh8</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/ValentinH8">github.com/ValentinH8</a></p>
+        </div>
+      </div>
+
+      <h2>Perfil Profesional</h2>
+      <div class="line"></div>
+      <p>
+        <strong>Fullstack especializado en Backend</strong> con experiencia en Node.js, TypeScript y NestJS. Enfoque en APIs RESTful, autenticación, arquitectura modular y bases de datos relacionales.
+        <strong>Comprometido con buenas prácticas, código limpio y mejora continua.</strong>
+      </p>
+
+      <h2>Habilidades Técnicas</h2>
+      <div class="line"></div>
+      <p><strong>Backend:</strong> Node.js, TypeScript, Express, NestJS, JWT/Auth, REST APIs</p>
+      <p><strong>Bases de datos:</strong> PostgreSQL, MySQL, MongoDB, Prisma, Sequelize</p>
+      <p><strong>Infraestructura:</strong> Docker básico, Render, Cloudinary</p>
+      <p><strong>Herramientas:</strong> Git, GitHub, Postman, Insomnia, Linux básico</p>
+      <p><strong>Frontend:</strong> React, HTML5, CSS3, TailwindCSS, Vite</p>
+
+      <h2>Proyectos Destacados</h2>
+      <div class="line"></div>
+
+      <h3>Red Social – Comunidad Estudiantil</h3>
+      <p>Funcionalidades completas de red social: autenticación, perfiles, posts, comentarios, likes, notificaciones, videollamadas y panel administrativo.</p>
+
+      <h3>API E-commerce – Peluquería</h3>
+      <p>Gestión de productos, turnos y pagos con autenticación, roles y validaciones.</p>
+
+      <h2>Experiencia Profesional</h2>
+      <div class="line"></div>
+
+      <h3>Soporte Técnico – Universidad Abierta Interamericana | 2022–2023</h3>
+      <p>Soporte a usuarios, mantenimiento de equipos y gestión de incidencias.</p>
+
+      <h3>Diseñador Gráfico Freelance | 2023–Presente</h3>
+      <p>Diseño digital e identidades visuales para clientes.</p>
+
+      <h2>Educación</h2>
+      <div class="line"></div>
+      <p><strong>Bootcamp Full Stack Developer</strong> – SoyHenry | 2025 (Completado)</p>
+      <p><strong>Curso de Desarrollo Web</strong> – Udemy | 2024 (Completado)</p>
+      <p><strong>Bachiller en Ciencias Sociales</strong> | 2021 (Completado)</p>
+
+      <h2>Idiomas</h2>
+      <div class="line"></div>
+      <p><strong>Español (nativo)</strong></p>
+      <p><strong>Inglés B2</strong></p>
+
+      <h2>Soft Skills</h2>
+      <div class="line"></div>
+      <p>Resolución de problemas • Autonomía • Comunicación clara • Trabajo en equipo • Liderazgo colaborativo • Atención al detalle</p>
+    </div>
+  </body>
+</html>
